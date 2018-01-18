@@ -9,7 +9,6 @@ oIFS=$IFS
 IFS=$'\n'
 count=0
 find ./ -mtime -1 -ls | while read -r i; do
-  # use "$i" with whatever you're doing
   #echo $i
   if [ $count == 0 ]; then
    	echo 'escaping ROOT dir '$(echo $i | awk '{print $11}')
@@ -22,5 +21,5 @@ find ./ -mtime -1 -ls | while read -r i; do
   		echo $file 'uploaded'
   	fi
 done
-
+	
 IFS=$oIFS
