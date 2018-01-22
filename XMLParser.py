@@ -9,7 +9,7 @@ data = open('/tmp/XMLData.csv', 'w')
 
 csvwriter = csv.writer(data)
 ireceiptrecord_head = []
-header = ['ADDDATE', 'ADDWHO', 'BILLEDCONTAINERQTY', 'CARRIERKEY' , 'CARRIERNAME', 'ADDDATE_DR', 'ADDWHO_DR', 'EXTERNRECEIPTKEY']
+header = ['ADDDATE', 'ADDWHO', 'BILLEDCONTAINERQTY', 'CARRIERKEY' , 'CARRIERNAME', 'ADDDATE_DR', 'ADDWHO_DR', 'EXTERNRECEIPTKEY', 'CLIENT_ID', 'ALTSKU', 'DESCR']
 csvwriter.writerow(header)
 
 for member in root.findall("./IRECEIPTRECORD"):
@@ -30,15 +30,36 @@ for member in root.findall("./IRECEIPTRECORD"):
         carriername = member.find('CARRIERNAME').text
         ireceiptrecord_head.append(carriername)
         
+        
                 
         for member1 in root.findall('./IRECEIPTRECORD/DETAILLIST/DETAILRECORD'):
         	detailrecord = []
+        	
         	adddate_dr = member1.find('ADDDATE').text
         	detailrecord.append(adddate_dr + '_DR')
+        	
         	addwho_dr = member1.find('ADDWHO').text
         	detailrecord.append(addwho_dr + '_DR')
+        	
         	lottable01_dr = member1.find('EXTERNRECEIPTKEY').text
         	detailrecord.append(lottable01_dr)
-        	csvwriter.writerow(ireceiptrecord_head + detailrecord)
+        	
+        	
+        	
+        	
+        	for member2 in root.findall('./IRECEIPTRECORD/DETAILLIST/DETAILRECORD/ITEMDETAIL/ITEM'):
+        		itemrecord = []
+        		client_id = member2.find('CLIENT_ID').text
+        		itemrecord.append(client_id)
+        		
+        		altsuk = member2.find('ALTSKU').text
+        		itemrecord.append(altsuk)
+        		
+        		descr = member2.find('DESCR').text
+        		itemrecord.append(descr)
+        		
+        		break;
+        	csvwriter.writerow(ireceiptrecord_head + detailrecord + itemrecord)
+        		
         	
 data.close()
