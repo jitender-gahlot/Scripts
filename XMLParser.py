@@ -29,9 +29,7 @@ for member in root.findall("./IRECEIPTRECORD"):
                 
         carriername = member.find('CARRIERNAME').text
         ireceiptrecord_head.append(carriername)
-        
-        
-                
+            
         for member1 in root.findall('./IRECEIPTRECORD/DETAILLIST/DETAILRECORD'):
         	detailrecord = []
         	
@@ -43,10 +41,7 @@ for member in root.findall("./IRECEIPTRECORD"):
         	
         	lottable01_dr = member1.find('EXTERNRECEIPTKEY').text
         	detailrecord.append(lottable01_dr)
-        	
-        	
-        	
-        	
+        		
         	for member2 in root.findall('./IRECEIPTRECORD/DETAILLIST/DETAILRECORD/ITEMDETAIL/ITEM'):
         		itemrecord = []
         		client_id = member2.find('CLIENT_ID').text
