@@ -17,7 +17,7 @@ find ./ -mtime -1 -ls | while read -r i; do
   	else
   		echo 'Updating files to HDFS'
   		file=$(echo $i | awk '{print $11}' | sed 's|.//||g' ) 
-  		scp $file root@xmhdp-ch2-en01d.sys.comcast.net:/home/spatel493
+  		scp $file root@host:/home/user
   		echo $file 'uploaded'
   	fi
 done
