@@ -6,3 +6,7 @@
 
 Note: Don't forget to add new line after completing the redis-host list
 
+3. chmod +x redisstats_extractor.sh
+
+4. Run ./redisstats_extractor.sh
+
