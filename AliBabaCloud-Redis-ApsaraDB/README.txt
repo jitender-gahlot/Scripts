@@ -4,5 +4,5 @@
 
 -- host:port:password
 
-Note: Don;t forget to add new line after completing the redis-host list
+Note: Don't forget to add new line after completing the redis-host list
 
