@@ -1,0 +1,12 @@
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
+r-6gjrc9vf30rgi6bb4apd.redis.ap-south-1.rds.aliyuncs.com:6379:Password@123
